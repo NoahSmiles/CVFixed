@@ -1,0 +1,80 @@
+body {
+	background-color: #EDEAE8;
+}
+
+#mainFrame {
+	color: white;
+	margin: 30px 30px 30px 30px;
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 300px auto auto;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	grid-template-areas: 
+		"photo name"
+		"presentation experience"
+		"presentation formation";
+}
+
+#picFrame {
+	background-image: url("Nico.png");
+	height: 100%;
+	width: 100%;
+	grid-area: photo;
+	border-radius: 5%;
+}
+
+#presentation {
+	grid-area: presentation;
+	color: black;
+	margin-top: 30px;
+}
+
+#presentation ul {
+	list-style: none;
+/*	font-size: 90%;
+*/	padding: 0;
+}
+
+#presentation ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+#mail {
+	font-size: 90%;
+}
+
+#competences {
+	font-size: 85%;
+}
+
+#interets {
+	font-size: 85%;
+}
+
+#name {
+	font-size: 120%;
+	font-weight: bolder;
+	color: black;
+	margin: auto;
+	grid-area: name;
+	text-align: right;
+}
+
+#experience {
+	color: black;
+	grid-area: experience;
+}
+
+#formation {
+	color: black;
+	grid-area: formation;
+}
+
+/*#sidebar {
+	position: fixed;
+	width: 250px;
+	max-height: 100%;
+	top: 300px;
+}*/
